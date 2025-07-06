@@ -1,6 +1,4 @@
-package ru.example.simple_api;
-
-import java.time.Instant;
+package ru.example.simple_api.model;
 
 
 public class Task {
@@ -27,6 +25,6 @@ public class Task {
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
-    public Instant getTimestamp() { return Instant.ofEpochMilli(timestamp); }
+    public long getTimestamp() { return timestamp; }
     public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
 }
